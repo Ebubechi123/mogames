@@ -8,6 +8,8 @@ import {
 import { fontSizes } from "../../../infrastructure/fonts/sizes";
 import Button from "../../primary/button/button.component";
 import { useEffect, useState } from "react";
+import Pulse from 'react-reveal/Pulse';
+
 
 const WORK_WITH_US = () => {
   const [noOfOpenings, setNoOfOpenings] = useState(0);
@@ -26,13 +28,13 @@ const WORK_WITH_US = () => {
   useEffect(() => {
     count(noOfOffices, setNoOfOffices, 20, 100);
     count(noOfOpenings, setNoOfOpenings, 100, 10);
-  }, [noOfOffices, setNoOfOffices, noOfOpenings, setNoOfOpenings]);
+  },[count, noOfOffices, noOfOpenings]);
 
   return (
-    <FlexibleDiv
+   <Pulse>
+     <FlexibleDiv
       margin={"30px 0px"}
       position={"relative"}
-      // style={{ overFlow: "hidden" }}
       style={{ overflow: "hidden" }}
     >
       <Image src={Img} width="100%" height={"auto"} objectFit="cover" />
@@ -131,6 +133,7 @@ const WORK_WITH_US = () => {
         </FlexibleDiv>
       </FlexibleDiv>
     </FlexibleDiv>
+   </Pulse>
   );
 };
 

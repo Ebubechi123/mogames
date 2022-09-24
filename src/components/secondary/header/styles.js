@@ -40,7 +40,7 @@ export const NavBarStyle = styled.nav`
 `;
 
 export const LogoSection = styled.div`
-  width: 10%;
+  width: 15%;
   @media only screen and (max-width: 880px) {
     width: 15%;
   }
@@ -51,7 +51,7 @@ export const LogoSection = styled.div`
 
 export const RightSection = styled.div`
   position: relative;
-  width: 90%;
+  width: 85%;
   display: flex;
   @media only screen and (max-width: 880px) {
     width: 85%;
@@ -74,7 +74,7 @@ export const RightSection = styled.div`
 
 export const LinksSection = styled.div`
   position: relative;
-  width: 80%;
+  width: 85%;
   @media only screen and (max-width: 680px) {
     width: 100%;
     margin-bottom: 12px;
@@ -106,7 +106,7 @@ export const Link = styled.li`
 
 export const NavButtonSection = styled.div`
   position: relative;
-  width: 20%;
+  width: 15%;
   display: flex;
   align-items: center;
   justify-content: center;

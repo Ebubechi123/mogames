@@ -6,7 +6,7 @@ import Button from "../../primary/button/button.component";
 
 const NewsCard = ({img,title,description}) => {
     return ( 
-        <FlexibleDiv width={'30%'} breakPoint={'680px'} breakPointwidth={"100%"} >
+        <FlexibleDiv width={'100%'} >
             <FlexibleDiv height={'auto'}>
                 <Image src={img} width={'100%'} height={'100%'} objectFit={'cover'} />
             </FlexibleDiv>

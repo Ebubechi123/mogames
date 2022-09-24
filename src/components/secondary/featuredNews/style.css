@@ -1,0 +1,9 @@
+.reveal-card{
+    width: 30%;
+}
+
+@media only screen and (max-width:680px) {
+    .reveal-card{
+        width: 100%;
+    }
+}
