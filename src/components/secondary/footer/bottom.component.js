@@ -2,13 +2,12 @@ import { fontSizes } from "../../../infrastructure/fonts/sizes";
 import { colorTheme } from "../../../infrastructure/theme/color";
 import FlexibleDiv from "../../primary/flexibleDiv/flexibleDiv.component";
 import { Text } from "../../primary/typography/typography.component";
-import {Fade} from "react-reveal"
 const Bottom = () => {
   let Time = new Date();
   let Year = Time.getFullYear();
   return (
     <>
-      <Fade>
+
         <div style={{width:"100%"}}>
         <FlexibleDiv bg={"white"} justifyContent={"center"} direction={"column"}>
         <hr
@@ -43,7 +42,6 @@ const Bottom = () => {
         </FlexibleDiv>
       </FlexibleDiv>
         </div>
-      </Fade>
     </>
   );
 };

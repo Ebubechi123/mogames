@@ -7,13 +7,12 @@ import {
 } from "../../primary/typography/typography.component";
 import { fontSizes } from "../../../infrastructure/fonts/sizes";
 import Button from "../../primary/button/button.component";
-import Pulse from 'react-reveal/Pulse';
 
 
 const WORK_WITH_US = () => {
 
   return (
-   <Pulse>
+
      <FlexibleDiv
       margin={"30px 0px"}
       position={"relative"}
@@ -115,7 +114,7 @@ const WORK_WITH_US = () => {
         </FlexibleDiv>
       </FlexibleDiv>
     </FlexibleDiv>
-   </Pulse>
+
   );
 };
 

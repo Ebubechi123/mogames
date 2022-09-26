@@ -8,7 +8,7 @@ import {
 } from "../../primary/typography/typography.component";
 import Head from "../categories/head.component";
 import { InputWrapper } from "./style";
-import { Fade } from "react-reveal";
+
 
 const NewsLetter = () => {
   return (
@@ -16,7 +16,7 @@ const NewsLetter = () => {
       <FlexibleDiv padding={"30px 0px"} justifyContent={"center"}>
         <FlexibleDiv width={"95%"}  >
           <FlexibleDiv margin={"12px 0px"}>
-            <Fade>
+          
               <div style={{ width: "100%" }}>
                 <Head
                   justifyContent={"flex-start"}
@@ -26,10 +26,10 @@ const NewsLetter = () => {
                   resFontSize={"14px"}
                 />
               </div>
-            </Fade>
+       
           </FlexibleDiv>
 
-          <Fade>
+ 
             <div
               style={{
                 width: "100%",
@@ -88,7 +88,7 @@ const NewsLetter = () => {
                 </FlexibleDiv>
               </InputWrapper>
             </div>
-          </Fade>
+    
         </FlexibleDiv>
       </FlexibleDiv>
     </>
