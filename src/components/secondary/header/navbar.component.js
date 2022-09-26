@@ -4,13 +4,14 @@ import { MenuCloseIcon, MenuOpenIcon } from "../../primary/icons/icons.component
 import Links from "./links.component";
 import Logo from "./logo.component";
 import { LinksSection, LogoSection, RightSection, NavBarStyle, NavbarWrapper, NavButtonSection, MenuSection} from "./styles";
-
+import { Fade } from "react-awesome-reveal";
 const NavBar = () => {
     const [toggleMenu,setToggleMenu] =useState(false)
     return (
       <>
 
-       <NavbarWrapper>
+     <Fade>
+     <NavbarWrapper>
           <NavBarStyle>
             <LogoSection>
               <Logo />
@@ -49,6 +50,7 @@ const NavBar = () => {
           </NavBarStyle>
         </NavbarWrapper>
 
+     </Fade>
       </>
     );
 }
