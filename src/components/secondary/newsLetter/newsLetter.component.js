@@ -8,16 +8,16 @@ import {
 } from "../../primary/typography/typography.component";
 import Head from "../categories/head.component";
 import { InputWrapper } from "./style";
-
+import { Fade } from "react-awesome-reveal";
 
 const NewsLetter = () => {
   return (
     <>
       <FlexibleDiv padding={"30px 0px"} justifyContent={"center"}>
-        <FlexibleDiv width={"95%"}  >
+        <FlexibleDiv width={"95%"}>
           <FlexibleDiv margin={"12px 0px"}>
-          
-              <div style={{ width: "100%" }}>
+            <div style={{ width: "100%" }}>
+              <Fade>
                 <Head
                   justifyContent={"flex-start"}
                   title={"NEWSLETTER"}
@@ -25,11 +25,10 @@ const NewsLetter = () => {
                   titleWeight={"500"}
                   resFontSize={"14px"}
                 />
-              </div>
-       
+              </Fade>
+            </div>
           </FlexibleDiv>
-
- 
+          <Fade style={{width:'100%'}} >
             <div
               style={{
                 width: "100%",
@@ -88,7 +87,7 @@ const NewsLetter = () => {
                 </FlexibleDiv>
               </InputWrapper>
             </div>
-    
+          </Fade>
         </FlexibleDiv>
       </FlexibleDiv>
     </>

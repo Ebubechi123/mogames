@@ -3,6 +3,7 @@ import FlexibleDiv from "../../primary/flexibleDiv/flexibleDiv.component";
 import Category from "./category.component";
 import Head from "./head.component";
 import { LIST_OF_CATEGORIES } from "./list_of_categories";
+import { Fade } from "react-awesome-reveal";
 const Categories = () => {
   return (
     <FlexibleDiv justifyContent={"center"}>
@@ -15,8 +16,8 @@ const Categories = () => {
         breakPointwidth={"90%"}
         breakPointMargin={"80px auto"}
       >
-
-          <div style={{ width: "100%" }}>
+        <div style={{ width: "100%" }}>
+          <Fade>
             <Head
               title={"Categories"}
               titleSize={fontSizes.desktop_subtitle}
@@ -24,20 +25,19 @@ const Categories = () => {
               displayRightSide={true}
               titleWeight={"600"}
             />
-          </div>
-
-
+          </Fade>
+        </div>
         {LIST_OF_CATEGORIES.map(({ categoryName, games }) => (
-
-            <div key={categoryName} style={{ width: "100%" }}>
+          <div key={categoryName} style={{ width: "100%" }}>
+            <Fade>
               <Category
                 className={categoryName}
                 key={categoryName}
                 categoryName={categoryName}
                 games={games}
               />
-            </div>
-   
+            </Fade>
+          </div>
         ))}
       </FlexibleDiv>
     </FlexibleDiv>

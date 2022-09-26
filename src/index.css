@@ -6,6 +6,9 @@
   font-family: "Karantina";
   src: local("Karantina"), url("./assets/fonts/Karantina/Karantina-Regular.ttf") format("truetype");
 }
+html{
+  scroll-behavior: smooth
+}
 body {
 margin:0px;
 padding: 0px;

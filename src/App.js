@@ -8,6 +8,7 @@ import NewsLetter from "./components/secondary/newsLetter/newsLetter.component";
 import Preloader from "./components/secondary/preloader/preloader.component";
 import WORK_WITH_US from "./components/secondary/workWithUs/work_with_us.component";
 import Layout from "./infrastructure/layout";
+import BACK_TO_TOP from "./components/secondary/backToTop/backtoTop.component";
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -34,6 +35,7 @@ function App() {
               <WORK_WITH_US />
               <NewsLetter />
               <Community />
+              <BACK_TO_TOP/>
               <Footer />
             </>
           )}

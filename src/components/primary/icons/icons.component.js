@@ -1,5 +1,5 @@
 import { MdClose,MdMenu }from "react-icons/md"
-import { IoIosArrowForward }from "react-icons/io"
+import { IoIosArrowForward,IoIosArrowUp }from "react-icons/io"
 import { FaFacebook,FaLinkedin,FaTwitter }from "react-icons/fa"
 
 
@@ -32,5 +32,10 @@ export const FacebookIcon = ({size,color,style,onClick})=>{
 export const LinkedInIcon = ({size,color,style,onClick})=>{
     return(
         <FaLinkedin size={size} color={color} style={style} onClick={onClick}/>
+    )
+}
+export const ArrowUpIcon = ({size,color,style,onClick})=>{
+    return(
+        <IoIosArrowUp size={size} color={color} style={style} onClick={onClick}/>
     )
 }
