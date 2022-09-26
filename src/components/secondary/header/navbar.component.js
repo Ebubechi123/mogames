@@ -10,7 +10,7 @@ const NavBar = () => {
     return (
       <>
 
-     <Fade>
+     <Fade style={{zIndex:"999",position:"relative"}} >
      <NavbarWrapper>
           <NavBarStyle>
             <LogoSection>
