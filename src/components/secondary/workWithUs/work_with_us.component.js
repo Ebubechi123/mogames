@@ -7,28 +7,10 @@ import {
 } from "../../primary/typography/typography.component";
 import { fontSizes } from "../../../infrastructure/fonts/sizes";
 import Button from "../../primary/button/button.component";
-import { useEffect, useState } from "react";
 import Pulse from 'react-reveal/Pulse';
 
 
 const WORK_WITH_US = () => {
-  const [noOfOpenings, setNoOfOpenings] = useState(0);
-  const [noOfOffices, setNoOfOffices] = useState(0);
-  const count = (state, setState, num, time) => {
-    for (let index = 0; index < num; index++) {
-      if (state < num) {
-        setTimeout(() => {
-          setState(noOfOpenings + 1);
-        }, time);
-      } else if ((state = num)) {
-        return state;
-      }
-    }
-  };
-  useEffect(() => {
-    count(noOfOffices, setNoOfOffices, 20, 100);
-    count(noOfOpenings, setNoOfOpenings, 100, 10);
-  },[count, noOfOffices, noOfOpenings]);
 
   return (
    <Pulse>
@@ -79,7 +61,7 @@ const WORK_WITH_US = () => {
             fontWeight={"600"}
             resFontSize={"x-large"}
           >
-            {noOfOpenings}+
+            100+
           </Text>
           <Text
             margin={"0px"}
@@ -88,7 +70,7 @@ const WORK_WITH_US = () => {
             fontWeight={"600"}
             resFontSize={"x-large"}
           >
-            {noOfOffices}+
+            20+
           </Text>
         </FlexibleDiv>
 
