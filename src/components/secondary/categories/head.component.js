@@ -50,6 +50,15 @@ const Head = ({ title, titleSize, displayRightSide,titleWeight,resFontSize,right
                 <DropDownOption>
                     Action
                 </DropDownOption>
+                <DropDownOption>
+                Adventures
+                </DropDownOption>
+                <DropDownOption>
+                Racings
+                </DropDownOption>
+                <DropDownOption>
+                Hard Core
+                </DropDownOption>
             </DropDown>
           </DropDownContainer>
             </>

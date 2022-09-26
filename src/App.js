@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Layout>
-        <Suspense fallback={<Preloader />}>
+        <Suspense>
           {showPreloader ? (
             <Preloader />
           ) : (
